@@ -1,22 +1,13 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
-	"gojira/controllers"
-	"net/http"
-
+	"gojira/routers"
 )
 
 func main() {
-	  r := gin.Default()
-	  r.LoadHTMLFiles("templates/index.html")
-	  r.Static("/static", "./static")
-    r.GET("/ping", func(c *gin.Context) {
-        c.String(200, "pong")
-    })
-    r.GET("/tickets", controllers.GetTicket)
-    r.GET("/",func(c *gin.Context) {
-    	 c.HTML(http.StatusOK, "index.html", gin.H{})
-    })
-    r.Run(":8081") // listen and serve on 0.0.0.0:8080
+
+	router := routers.InitRoutes()
+
+	router.Run(":8081")
+
 }
