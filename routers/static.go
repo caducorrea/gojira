@@ -7,7 +7,7 @@ import (
 
 func SetStaticRoutes(router *gin.Engine) *gin.Engine {
 
-	router.LoadHTMLFiles("templates/index.html")
+	router.LoadHTMLFiles("views/index.html")
 	router.Static("/static", "./static")
 
 	router.GET("/", func(c *gin.Context) {
