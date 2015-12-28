@@ -239,3 +239,12 @@ _:-ms-input-placeholder, :root .demo-graph {
       -ms-flex-align: center;
           align-items: center;
 }
+/*custom CSS*/
+#placeOrder {
+  margin-left: 15px;
+}
+
+#orderBusyIndicator.is-active {
+  position: relative;
+  top: 10px;
+}

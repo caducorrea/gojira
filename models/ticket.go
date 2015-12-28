@@ -1,7 +1,6 @@
 package models
 
 import (
-	"github.com/jinzhu/gorm"
 	"time"
 )
 
@@ -11,5 +10,7 @@ type Ticket struct
 	CreatedAt time.Time
 	UpdatedAt time.Time
 	Title string
-	Description string `sql:"type:text"`
+	Description string 
+	User_id int
+	Department string
 }

@@ -104,7 +104,7 @@
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
+          <a class="mdl-navigation__link" href="#" id="ticketLink"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation" >inbox</i>Tickets</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
@@ -116,7 +116,7 @@
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
       </div>
-      <main class="mdl-layout__content mdl-color--grey-100">
+      <main class="mdl-layout__content mdl-color--grey-100" id="content">
         
       </main>
     </div>
@@ -168,5 +168,12 @@
         </defs>
       </svg>
     <script src="./static/js/material.min.js"></script>
+    <script src="./static/js/jquery.js"></script>
+    <script src="https://fb.me/react-0.14.3.js"></script>
+    <script src="https://fb.me/react-dom-0.14.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="./static/js/react/tickets/ticketsResult.js" type="text/babel"></script>
+    <script src="./static/js/react/tickets/searchTicket.js" type="text/babel"></script>
+    <script  src="./static/js/react/jsRoutes.js" type="text/babel"></script>
   </body>
 </html>
