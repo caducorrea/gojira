@@ -11,7 +11,7 @@ handleClick: function(e){
 			})
 		.fail(function(data)
 			{
-				alert('Error on search!');
+				toastr.error('Error on search!');
 			});
 			
 		},
